@@ -48,7 +48,9 @@ $('#newAlbumForm').on('submit', function(event){
 // });
 
 function onSuccess(json){
+
   renderAlbum(json);
+
 }
 
 function onError(json){
@@ -59,6 +61,7 @@ function onError(json){
 
 // this function takes a single album and renders it to the page
 function renderAlbum(album) {
+    console.log(album);
   var source = $('#album-template').html();
   // console.log(source);
  var  template = Handlebars.compile(source);

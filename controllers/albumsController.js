@@ -14,6 +14,10 @@ function index(req, res) {
     res.json(success);
   });
 
+  // db.Album.find().populate('songs').exec(function(err, success){
+  //   res.json(success);
+  // });
+
 // });
 }
 
@@ -43,7 +47,8 @@ console.log(cleanedarray);
      res.sendStatus(500);
    }
    console.log('GET IT DONE HOMIE');
-  //  res.json(success);
+   res.json(success);
+   console.log(success);
  });
 
 }
