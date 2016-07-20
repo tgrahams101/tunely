@@ -40,8 +40,8 @@ app.get('/api', controllers.api.index);
 app.get('/api/albums', controllers.albums.index);
 
 app.post('/api/albums', controllers.albums.create);
-
-app.post('/api/songs', controllers.songs.create);
+// 
+// app.post('/api/songs', controllers.songs.create);
 
 /**********
  * SERVER *

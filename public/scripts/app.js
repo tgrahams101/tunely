@@ -17,7 +17,7 @@ $(document).ready(function() {
                   renderAlbum(event);
                 });
 
-  });
+        });
 
     $('#newAlbumForm').on('submit', function(event){
         var serializeddata = $('#newAlbumForm').serialize();
@@ -42,11 +42,30 @@ $(document).ready(function() {
         console.log('id',id);
         $('#songModal').data('album-id', id);
         $('#songModal').modal();
-        $('#savesong').on('click', function(event){
-
-        });
-
-
+ //
+        var endpoint = 'api/albums/' + id + '/songs';
+        console.log(endpoint);
+ //
+ //        $('#savesong').on('click', function(event){
+ // //   var songData= songModal.data.serialize
+ // //data. album-id= Number
+ // //form.name.songName= String
+ // //form.name.trackNumber= NUMBER.
+ // //form.name.id=songModal.data.albumid
+ //        //  $.ajax({
+ //         //
+ //        //    method: "POST",
+ //        //    action: '/api/songs',
+ //        //    data: songData,
+ //        //    success: onSuccess,
+ //        //    error: onError
+ //         //
+ //        //
+ //        //  });
+ //        console.log('I ATTEMPED SONG SAVE');
+ //        });
+ //
+      //
       });
 });
 
